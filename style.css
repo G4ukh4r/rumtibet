@@ -30,7 +30,7 @@ body{
 }
 .container{
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1180px;
 }
 header{
     display: grid;
@@ -67,6 +67,7 @@ nav > div{
     padding-top: 463px;
     font-size: 50px;
     line-height: 150%;
+    margin-bottom: 41px;
 }
 .header-wrapper{
     background-image: url(images/bg.png);
