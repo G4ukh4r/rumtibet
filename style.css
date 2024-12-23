@@ -1,4 +1,33 @@
-
+@font-face {
+    font-family: 'NextArt';
+    src: url(fonts/NEXT\ ART_Regular.otf);
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'NextArt';
+    src: url(fonts/NEXT\ ART_Light.otf);
+    font-weight: light;
+}
+@font-face {
+    font-family: 'NextArt';
+    src: url(fonts/NEXT\ ART_Bold.otf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'NextArt';
+    src: url(fonts/NEXT\ ART_Heavy.otf);
+    font-weight: heavy;
+}
+@font-face {
+    font-family: 'NextArt';
+    src: url(fonts/NEXT\ ART_SemiBold.otf);
+    font-weight: semibold;
+}
+body{
+    font-family: 'NextArt';
+    font-weight: bold;
+    margin: 0;
+}
 .container{
     margin: 0 auto;
     max-width: 1200px;
@@ -13,6 +42,12 @@ header{
 nav{
     display: flex;
     white-space: nowrap;
+    font-family: "Nunito Sans", serif;
+    margin-right: 49px;
+    font-size: 18px;
+}
+nav > div{
+    cursor: pointer;
 }
 .nav-item{
     margin-right: 24px;
@@ -22,8 +57,20 @@ nav{
     background-color: #1A3E3E;
     color: #FDFDFD;
     border: none;
+    font-weight: 900;
 }
 .btn.consultation{
     width: 157px;
     height: 44px;
+}
+.title{
+    padding-top: 463px;
+    font-size: 50px;
+    line-height: 150%;
+}
+.header-wrapper{
+    background-image: url(images/bg.png);
+    background-size: cover;
+    background-repeat: none;
+    color: #FDFDFD;
 }
