@@ -1,0 +1,29 @@
+
+.container{
+    margin: 0 auto;
+    max-width: 1200px;
+}
+header{
+    display: grid;
+    grid-template-columns: 2fr 3fr 1fr;
+    align-items: center;
+    padding-top: 14px;
+    color: #FDFDFD;
+}
+nav{
+    display: flex;
+    white-space: nowrap;
+}
+.nav-item{
+    margin-right: 24px;
+}
+.btn{
+    border-radius: 4px;
+    background-color: #1A3E3E;
+    color: #FDFDFD;
+    border: none;
+}
+.btn.consultation{
+    width: 157px;
+    height: 44px;
+}
