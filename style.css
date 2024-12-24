@@ -24,8 +24,7 @@
     font-weight: semibold;
 }
 body{
-    font-family: 'NextArt';
-    font-weight: bold;
+    font-family: "Nunito Sans", serif;
     margin: 0;
 }
 .container{
@@ -58,20 +57,205 @@ nav > div{
     color: #FDFDFD;
     border: none;
     font-weight: 900;
+    cursor: pointer;
+    padding: 16px 36px;
+    font-family: "Nunito Sans", serif;
+    font-weight: normal;
+    font-size: 16px;
 }
 .btn.consultation{
     width: 157px;
     height: 44px;
+    padding: unset;
 }
 .title{
-    padding-top: 463px;
+    padding-top: 400px;
     font-size: 50px;
     line-height: 150%;
     margin-bottom: 41px;
+    margin-top: 0;
+    font-family: 'NextArt';
+    font-weight: bold;
 }
-.header-wrapper{
+.start{
     background-image: url(images/bg.png);
     background-size: cover;
-    background-repeat: none;
+    background-repeat: no-repeat;
     color: #FDFDFD;
+    padding-bottom: 82px;
+}
+.program select{
+    display: block;
+    width: 270px;
+    height: 52px;
+    background: none;
+    border: 1px solid #E1E3E4;
+    padding: 14px 16px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    color: #FDFDFD;
+    font-family: "Nunito Sans", serif;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+.program select:focus{
+    outline: none;
+}
+.program select option{
+    color:#1A3E3E;
+    font-weight: bold;
+    line-height: 200%;
+}
+.program input[type='date']{
+    display: block;
+    width: 270px;
+    height: 52px;
+    background: none;
+    border: 1px solid #E1E3E4;
+    padding: 14px 16px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    color: #FDFDFD;
+    font-family: "Nunito Sans", serif;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 8px;
+    appearance: none;
+}
+.program label{
+    font-family: "Nunito Sans", serif;
+    font-size: 14px;
+    font-weight: normal;
+    margin-left: 8px;
+}
+.program{
+    display: flex;
+    gap: 24px;
+    background-color: rgba(255, 255, 255, 20%);
+    padding: 40px 42px;
+    border-radius: 10px;
+}
+.form-btn{
+    width: 270px;
+    height: 52px;
+    background-color: #FDFDFD;
+    color: #1A3E3E;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+}
+.about{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.about_imgs{
+    position: relative;
+    height: auto;
+}
+.about_imgs img{
+    padding-top: 0;
+}
+.second_pic{
+    position: absolute;
+    left: 130px;
+    top: 126px;
+}
+.about_text{
+    width: 580px;
+    margin-top: 64px;
+}
+span{
+    color: #F2BE22;
+    font-weight: bold;
+    font-size: 24px;
+    font-weight: normal;
+}
+h2{
+    font-size: 32px;
+    line-height: 120%;
+    margin-top: 8px;
+    margin-bottom: 40px;
+}
+.about_text p{
+    font-size: 18px;
+    line-height: 150%;
+    margin-bottom: 49px;
+}
+.programs_text {
+    max-width: 580px;
+}
+.benefit{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    gap: 16px;
+}
+.programs_text > p{
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+.benefit h3, p {
+    margin: 0;
+}
+.benefit p {
+    width: 514px;
+    font-size: 14px;
+}
+.benefit h3{
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+.img_bg{
+    background-color: #E5EEEB;
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img_bg img{
+    width: 36px;
+    height: 36px;
+}
+.program_img{
+    width: 250px;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+.program_img.one {
+    border-radius: 0 50px 0 50px;
+    background-image: url(images/p1.jpg);
+}
+.program_img.two {
+    border-radius: 50px 0 50px 0;
+    background-image: url(images/p2.jpg);
+}
+.program_img.three {
+    border-radius: 50px 0 50px 0;
+    background-image: url(images/p3.jpg);
+}
+.program_img.four {
+    border-radius: 0 50px 0 50px;
+    background-image: url(images/p4.jpg);
+}
+.programs{
+    display: flex;
+    justify-content: space-between;
+    background-color: #F3F5F4;
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+.programs_imgs{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    height: 510px;
+    margin-top: 40px;
 }
