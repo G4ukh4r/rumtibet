@@ -245,11 +245,13 @@ h2{
     background-image: url(images/p4.jpg);
 }
 .programs{
-    display: flex;
-    justify-content: space-between;
     background-color: #F3F5F4;
     padding-top: 80px;
     padding-bottom: 100px;
+}
+.programs .container{
+    display: flex;
+    justify-content: space-between;
 }
 .programs_imgs{
     display: grid;
@@ -258,4 +260,109 @@ h2{
     gap: 10px;
     height: 510px;
     margin-top: 40px;
+}
+.popular{
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+.popular_text{
+    text-align: center;
+}
+.popular_text h2{
+    margin-bottom: 50px;
+}
+.popular_cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+.popular_card{
+    border-radius: 32px;
+    height: 500px;
+    max-width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    position: relative;
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+.popular_card.first{
+    background-image: url(images/lake.jpg);
+}
+.popular_card.second{
+    background-image: url(images/night.jpg);
+}
+.popular_card.third{
+    background-image: url(images/yoga.jpg);
+}
+.rating{
+    background-color: rgba(255, 255, 255, 40%);
+    width: 65px;
+    height: 32px;
+    padding: 4px 8px;
+    box-sizing: border-box;
+    border-radius: 4px 0 4px 0;
+    display: flex;
+    gap: 4px;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 50px;
+    right: 0;
+}
+.rating_text{
+    font-size: 14px;
+    color: #1A3E3E;
+    font-weight: bold;
+}
+.btn.rating_btn{
+    display: block;
+    margin: 0 auto;
+}
+.overlay {
+    width: -webkit-fill-available;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 20%);
+    position: absolute;
+    top: 410px;
+    backdrop-filter: blur(6px);
+    border-radius: 32px;
+    padding: 20px 32px;
+    box-sizing: border-box;
+    transition: top 1s ease;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.overlay:hover{
+    top: 0px;
+}
+.price_inf{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 35px;
+    color: white;
+    width: 100%;
+}
+.price_text h3{
+    margin: 0;
+    font-size: 24px;
+}
+.price_text span {
+    color: white;
+    font-size: 14px;
+}
+.price{
+    padding: 8px 16px;
+    background-color: rgba(255, 255, 255, 30%);
+    display: inline-block;
+    border-radius: 4px;
+    font-weight: bold;
+}
+.overlay_btn{
+    padding: 12px 24px;
 }
