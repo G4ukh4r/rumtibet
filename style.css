@@ -55,13 +55,19 @@ nav > div{
     border-radius: 4px;
     background-color: #1A3E3E;
     color: #FDFDFD;
-    border: none;
+    border: 1px solid #1A3E3E;
     font-weight: 900;
     cursor: pointer;
     padding: 16px 36px;
     font-family: "Nunito Sans", serif;
-    font-weight: normal;
+    font-weight: 600;
     font-size: 16px;
+    transition: 0.3s;
+    box-sizing: border-box;
+}
+.btn:hover{
+    background-color: #FDFDFD;
+    color: #1A3E3E;
 }
 .btn.consultation{
     width: 157px;
@@ -144,6 +150,13 @@ nav > div{
     font-weight: bold;
     border: none;
     border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.form-btn:hover {
+    background-color: #1A3E3E;
+    border: 1px solid #FDFDFD;
+    color: #FDFDFD;
 }
 .about{
     padding-top: 100px;
@@ -330,7 +343,7 @@ h2{
     border-radius: 32px;
     padding: 20px 32px;
     box-sizing: border-box;
-    transition: top 1s ease;
+    transition: top 2s ease;
     color: white;
     display: flex;
     flex-direction: column;
@@ -365,4 +378,85 @@ h2{
 }
 .overlay_btn{
     padding: 12px 24px;
+}
+.blog {
+    padding-top: 80px;
+    padding-bottom: 100px;
+    background-color: #F3F5F4;
+}
+.blog_heading{
+    text-align: center;
+}
+.blog_card_img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    border-radius: 6px;
+    width: 230px;
+    height: auto;
+}
+.blog_card_img.first{
+    background-image: url(images/italy.jpg);
+}
+.blog_card_img.second{
+    background-image: url(images/plane.jpg);
+}
+.blog_card_img.third{
+    background-image: url(images/journey.jpg);
+}
+.blog_card_img.fourth{
+    background-image: url(images/india.jpg);
+}
+.blog_card{
+    padding: 16px;
+    width: 580px;
+    height: 312px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #FDFDFD;
+    border-radius: 10px;
+    box-sizing: border-box;
+    flex-grow: 1;
+    flex-basis: 500px;
+    gap: 24px;
+    box-shadow: 0 0 15px rgba(24, 28, 30, 12%);
+}
+.blog_card_text{
+    width: 294px;
+    position: relative;
+}
+.blog_card_text h3{
+    font-size: 24px;
+    margin-top: 16px;
+    margin-bottom: 24px;
+    cursor: pointer;
+}
+.blog_card_text h3:hover, .read_article:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+    color: #1A3E3E;
+}
+.blog_card_text p {
+    font-size: 14px;
+}
+.blog_card_bottom span{
+    font-size: 14px;
+    font-weight: bold;
+}
+.blog_card_bottom {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.read_article {
+    color: #1A3E3E;
+    cursor: pointer;
+}
+.blog_cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
