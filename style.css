@@ -171,7 +171,7 @@ nav > div{
 .about_imgs img{
     padding-top: 0;
 }
-.second_pic{
+.about.second_pic{
     position: absolute;
     left: 130px;
     top: 126px;
@@ -459,4 +459,54 @@ h2{
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    margin-bottom: 50px;
+}
+.other_btn{
+    display: block;
+    margin: 0 auto;
+}
+.gallery{
+    padding-top: 86px;
+    padding-bottom: 198px;
+}
+.gallery_heading{
+    text-align: center;
+}
+.photos{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    width: auto;
+    height: 520px;
+}
+.photo{
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    border-radius: 6px;
+}
+.photo.first { 
+    grid-area: 1 / 1 / 2 / 3;
+    background-image: url(images/photo1.jpg);
+}
+.photo.second { 
+    grid-area: 1 / 3 / 2 / 4;
+    background-image: url(images/photo2.jpg);
+}
+.photo.third { 
+    grid-area: 1 / 4 / 2 / 5;
+    background-image: url(images/photo3.jpg);
+}
+.photo.fourth { 
+    grid-area: 2 / 1 / 3 / 2;
+    background-image: url(images/photo4.jpg);
+}
+.photo.fifth {
+    grid-area: 2 / 2 / 3 / 4;
+    background-image: url(images/photo5.jpg);
+}
+.photo.sixth { 
+    grid-area: 2 / 4 / 3 / 5;
+    background-image: url(images/photo6.jpg);
 }
