@@ -479,6 +479,7 @@ h2{
     gap: 20px;
     width: auto;
     height: 520px;
+    margin-bottom: 50px;
 }
 .photo{
     background-repeat: no-repeat;
@@ -509,4 +510,13 @@ h2{
 .photo.sixth { 
     grid-area: 2 / 4 / 3 / 5;
     background-image: url(images/photo6.jpg);
+}
+.pinterest_btn {
+    display: block;
+    margin: 0 auto;
+}
+footer{
+    padding-top: 178px;
+    padding-bottom: 80px;
+    background-color: #1A3E3E;
 }
