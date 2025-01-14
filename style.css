@@ -77,6 +77,9 @@ nav > div:hover{
     height: 44px;
     padding: unset;
 }
+.logo img{
+    cursor: pointer;
+}
 .title{
     padding-top: 400px;
     font-size: 50px;
