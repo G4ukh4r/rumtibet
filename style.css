@@ -422,8 +422,6 @@ h2{
     background-color: #FDFDFD;
     border-radius: 10px;
     box-sizing: border-box;
-    flex-grow: 1;
-    flex-basis: 500px;
     gap: 24px;
     box-shadow: 0 0 15px rgba(24, 28, 30, 12%);
 }
@@ -538,6 +536,8 @@ footer{
     white-space: nowrap;
     display: flex;
     margin-bottom: 32px;
+    text-decoration: underline;
+    font-weight: 600;
 }
 .phone_mail>a{
     margin-right: 24px;
@@ -619,17 +619,20 @@ footer svg{
 .list li:hover svg{
     fill: #F2BE22;
 }
+.container.sign{
+    position: relative;
+    top: 98px;
+}
 .sign_up{
     padding: 40px 100px;
     background-color: #FDFDFD;
-    position: relative;
-    top: 98px;
+    
     display: flex;
     justify-content: space-between;
     border-radius: 6px;
     box-sizing: border-box;
     margin: 0 auto;
-    max-width: 1180px;
+    width: auto;
     box-shadow: 0 0 15px rgba(24, 28, 30, 12%);
 }
 input[type="email"]{
@@ -664,6 +667,8 @@ label[for="email"]{
 .sign_up_left h2{
     font-size: 26px;
     margin: 0;
+    margin-bottom: 18px;
+    margin-top: 8px;
 }
 .sign_up_left span{
     font-size: 18px;
@@ -679,4 +684,54 @@ label[for="email"]{
 }
 .sign_up_right{
     max-width: 536px;
+}
+@media screen and (max-width: 600px){
+    .container{
+        padding: 0 16px;
+        overflow: hidden;
+        width: auto;
+    }
+    nav, .btn.consultation{
+        display: none;
+    }
+    .program{
+        display: none;
+    }
+    .programs_imgs{
+        display: none;
+    }
+    .sign_up{
+        flex-wrap: wrap;
+    }
+    .inputs{
+        flex-wrap: wrap;
+    }
+    .title{
+        font-size: 28px;
+    }
+    .about.first_pic{
+        display: none;
+    }
+    .about.second_pic{
+        position: unset;
+    }
+    .about{
+        display: unset;
+    }
+    .about_text{
+        width: auto;
+    }
+    .benefit p{
+        width: auto;
+    }
+    .blog_cards{
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    input[type="email"]{
+        margin-bottom: 16px;
+    }
+    .btn.form{
+        margin-bottom: 24px;
+    }
 }
