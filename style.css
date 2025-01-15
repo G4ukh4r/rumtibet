@@ -694,6 +694,9 @@ label[for="email"]{
     nav, .btn.consultation{
         display: none;
     }
+    h2{
+        font-size: 24px;
+    }
     .program{
         display: none;
     }
@@ -702,6 +705,7 @@ label[for="email"]{
     }
     .sign_up{
         flex-wrap: wrap;
+        padding: 24px;
     }
     .inputs{
         flex-wrap: wrap;
@@ -713,7 +717,7 @@ label[for="email"]{
         display: none;
     }
     .about.second_pic{
-        position: unset;
+        display: none;
     }
     .about{
         display: unset;
@@ -727,11 +731,60 @@ label[for="email"]{
     .blog_cards{
         flex-direction: row;
         flex-wrap: nowrap;
+        overflow: hidden;
+        overflow-x: auto;
+    }
+    .blog_cards::-webkit-scrollbar{
+        display: none;
+    }
+    .blog_card{
+        flex-direction: column;
+        max-width: 580px;
+        height: 496px;
+        gap: 0;
+        padding: 0;
+    }
+    .blog_card_text{
+        padding: 16px;
+    }
+    .blog_card_text h3{
+        margin-top: 0;
+    }
+    .blog_card_img{
+        height: 100%;
+        width: 100%;
+        border-radius: 6px 6px 0 0;
+    }
+    .blog_card_bottom{
+        position: unset;
+    }
+    .blog_card_text p{
+        margin-bottom: 16px;
+    }
+    .blog_heading, .popular_text,.gallery_heading{
+        text-align: left;
+    }
+    .blog_heading span, .popular_text span,.gallery_heading span{
+        font-size: 20px;
     }
     input[type="email"]{
         margin-bottom: 16px;
     }
     .btn.form{
         margin-bottom: 24px;
+    }
+    .photos{
+        display: flex;
+        flex-direction: row;
+        height: unset;
+        overflow-x: auto;
+    }
+    .photo{
+        grid-area: none;
+        width: 280px;
+        height: 250px;
+    }
+    .blog.container{
+        overflow: hidden;
     }
 }
