@@ -619,6 +619,10 @@ footer svg{
 .list li:hover svg{
     fill: #F2BE22;
 }
+.list li:hover a{
+    color: #F2BE22;
+    text-decoration: underline;
+}
 .container.sign{
     position: relative;
     top: 98px;
@@ -684,6 +688,15 @@ label[for="email"]{
 }
 .sign_up_right{
     max-width: 536px;
+}
+label[for="burger"]{
+    display: none;
+}
+#burger{
+    display: none;
+}
+.nav_mobile{
+    display: none;
 }
 @media screen and (max-width: 600px){
     .container{
@@ -786,5 +799,72 @@ label[for="email"]{
     }
     .blog.container{
         overflow: hidden;
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+    }
+    label[for="burger"]{
+        position: relative;
+        display: block;
+        height: 25px;
+        width: 30px;
+        z-index: 30;
+    }
+    .burger_label::before, .burger_label::after, .burger_label span{
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        border-radius: 2px;
+        background-color: #fff;
+        transition: 0.3s;
+    }
+    .burger_label::before{
+        content: '';
+        top: 0;
+    }
+    .burger_label::after{
+        content: '';
+        bottom: 0;
+    }
+    .burger_label span {
+        top: 11px;
+    }
+    #burger:checked ~ .burger_label::after{
+        transform: rotate(45deg);
+        bottom: 10px;
+    }
+    #burger:checked ~ .burger_label::before{
+        transform: rotate(-45deg);
+        top: 12px;
+    }
+    #burger:checked ~ .burger_label span{
+        transform: rotate(-45deg);
+        top: 12px;
+    }
+    .nav_mobile{
+        display: block;
+        position: fixed;
+        background-color: #1A3E3E;
+        padding-top: 50px;
+        padding-left: 16px;
+        padding-right: 16px;
+        inset: 0;
+        left: -100vw;
+        right: 100vw;
+        width: 100%;
+        box-sizing: border-box;
+        transition: 0.3s;
+    }
+    .nav_mobile .list svg{
+        fill: #FDFDFD;
+        margin-top: 7px;
+    }
+    .nav_mobile .list{
+        padding-left: revert;
+    }
+    #burger:checked ~ .nav_mobile {
+        left: 0;
+        right: 0;
     }
 }
