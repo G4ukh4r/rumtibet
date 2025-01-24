@@ -959,19 +959,3 @@ label[for="burger"]{
         font-weight: bold;
     }
 }
-@media screen and (max-width: 1200px){
-    .container{
-        padding: 0 16px;
-        overflow: hidden;
-        width: auto;
-    }
-    .blog_card {
-        max-width: 500px;
-    }
-    .blog_cards{
-        justify-content: center;
-    }
-    .program{
-        flex-wrap: wrap;
-    }
-}
